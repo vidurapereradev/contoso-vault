@@ -5,14 +5,14 @@ DAYS_IN_WEEK: int = 7
 day: int = int(input("Day: "))
 delivery_day: int = 0
 
-if 1 > day or day > DAYS_IN_WEEK:
+if 1 > day or day > DAYS_IN_WEEK: # Check if the day is valid (between 1 and 7)
     print("Invalid day")
 
 else:
     
     days_to_wait = int(input("Days to wait: "))
 
-    if 0 > days_to_wait or days_to_wait > DAYS_IN_WEEK: 
+    if 0 > days_to_wait or days_to_wait > DAYS_IN_WEEK: # Check if the days to wait is valid (between 0 and 7)
 
         print("Invalid days to wait")
     else:
